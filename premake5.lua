@@ -1,8 +1,8 @@
 project "GLFW"
-    kind "StaticLib"
-    Language "C"
+	kind "StaticLib"
+	language "C"
 
-    targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files
@@ -16,8 +16,7 @@ project "GLFW"
 		"src/monitor.c",
 		"src/vulkan.c",
 		"src/window.c"
-    }
-    
+	}
 	filter "system:linux"
 		pic "On"
 
